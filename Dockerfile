@@ -7,4 +7,6 @@ RUN echo 'deb https://download.owncloud.com/desktop/ownCloud/stable/latest/linux
     apt-get update -q && \
     apt-get install -y owncloud-client
 
+COPY ./entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
 ENTRYPOINT /entrypoint.sh

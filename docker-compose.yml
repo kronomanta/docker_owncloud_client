@@ -11,6 +11,7 @@ services:
       - SERVER_URL=
       - SERVER_PORT=
       - SERVER_SUBFOLDER=
+      - CRON_SCHEDULE=
     volumes:
       - ./entrypoint.sh:/entrypoint.sh 
       - ./data:/owncloud/data
