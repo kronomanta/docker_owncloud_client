@@ -1,5 +1,5 @@
 # docker_owncloud_client
-A Docker container to download and run the latest [Owncloud Desktop client](https://owncloud.com/desktop-app).
+A Docker container to download and run the latest [Owncloud Desktop client](https://owncloud.com/desktop-app) for CLI access.
 
 ## Usage
 First, you need to install both [Docker Engine](https://docs.docker.com/get-docker) and [Docker Compose](https://docs.docker.com/compose/install).
