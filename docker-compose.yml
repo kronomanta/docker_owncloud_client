@@ -1,0 +1,17 @@
+version: '2'
+
+services:
+  owncloud_client:
+    restart: unless-stopped
+    container_name: "owncloud_client_prebuilt"
+    build: .
+    environment: 
+      - USER=
+      - PASS=
+      - SERVER_URL=
+      - SERVER_PORT=
+      - SERVER_SUBFOLDER=
+    volumes:
+      - ./entrypoint.sh:/entrypoint.sh 
+      - ./data:/owncloud/data
+    
